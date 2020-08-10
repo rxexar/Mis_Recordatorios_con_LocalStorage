@@ -1,7 +1,7 @@
-// Variables
+//--------------- Variables
 const listaPendientes = document.getElementById("lista-pendientes");
 
-// Event Listeners
+// ---------- Event Listeners ------------
 
 eventListener();
 
@@ -18,8 +18,12 @@ function eventListener() {
   document.addEventListener("DOMContentLoaded", localStorageListo);
 }
 
-// Funciones
+//---------- Funciones---------------
 
+// Limpia el text area
+function eraseText() {
+  document.getElementById("Nuevos").value = "";
+}
 //Añadir pendiente del formulario
 function agregarPendiente(e) {
   e.preventDefault();

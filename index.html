@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <div id="contenido">
+    <section id="contenido">
       <div class="container">
         <h1>Cosas por hacer usando Local Storage</h1>
         <div class="row">
@@ -17,7 +17,11 @@
             <label for="Nuevos">Nuevos:</label>
             <form action="#" id="formulario">
               <label for="Nuevos"></label>
-              <textarea id="Nuevos" class="u-full-width"></textarea>
+              <textarea
+                id="Nuevos"
+                onclick="javascript:eraseText();"
+                class="u-full-width"
+              ></textarea>
               <input
                 type="submit"
                 class="button u-full-width button-primary"
@@ -31,9 +35,8 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!--#contenido-->
-
     <script src="assets/js/app.js"></script>
   </body>
 </html>
